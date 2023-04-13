@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import styles from '../styles/minute.module.scss'
+import styles from '../styles/minute.module.scss';
 
 function Minute() {
   return (
@@ -15,11 +15,12 @@ function Minute() {
               </div>
             </div>
           </div>
-          <div className="col-md-8 ">
+          <div className={`sectionTitleM mt-5 fw-bold`}>À LA MINUTE</div>
+          <Container className={`col-md-8 ${styles.minuteContainer}`}>
             <div className={`row justify-content-center align-item-center my-4`}>
               <div className={`col-md-6 ${styles.imgParent} ${styles.borderNone}`}>
-                <Image src="./images/space3.jpg" className={`w-100 ${styles.imgHover}`} />
-                <div className={` ${styles.outlineDiv}`}></div>
+                <Image src="./images/space3.jpg" className={`w-100 ${styles.imgHover}`} alt="" />
+                <div className={` ${styles.outlineDiv} ms-3`}></div>
               </div>
               <div className={`col-md-6 ${styles.imgParent}`}>
                 <Image src="./images/chef.jpg" className={`w-100 ${styles.imgHover}`} alt="" />
@@ -28,12 +29,12 @@ function Minute() {
             </div>
             <div className="row  justify-content-center align-item-center mb-4">
               <div className={`col-md-4 ${styles.imgParent} ${styles.borderNone}`}>
-                <Image src="./images/scottish.jpg" className={`w-100 ${styles.imgHover}`} />
-                <div className={` ${styles.outlineDiv}`}></div>
+                <Image src="./images/scottish.jpg" className={`w-100 ${styles.imgHover}`} alt=""/>
+                <div className={` ${styles.outlineDiv} ms-3`}></div>
               </div>
               <div className={`col-md-4 ${styles.imgParent}`}>
                 <Image src="./images/Shaun.jpg" className={`w-100 ${styles.imgHover}`} alt="" />
-                <div className={` ${styles.outlineDiv}`}></div>
+                <div className={` ${styles.outlineDiv} ms-0`}></div>
               </div>
               <div className={`col-md-4 ${styles.arr}`}>
                 <div className="d-flex pt-5 ">
@@ -42,7 +43,7 @@ function Minute() {
                 </div>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
       </div>
     </div>

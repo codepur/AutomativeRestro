@@ -6,7 +6,7 @@ export default function Home() {
     const [first, setfirst] = useState(false)
     return (
         <>
-            <Carousel  fade indicators={false} className="home">
+            <Carousel fade indicators={false} className="home">
                 <Carousel.Item className='screensize'>
                     <video
                         src={`/images/vid1.mp4`}
@@ -14,6 +14,7 @@ export default function Home() {
                         autoPlay
                         autoplay="autoplay"
                         muted
+                        loop
                         className={`${styles.main}`}
                     />
                 </Carousel.Item>

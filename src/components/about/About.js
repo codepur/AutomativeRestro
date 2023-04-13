@@ -73,9 +73,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IconArrowLeft, IconArrowRight, IconArrowRightBar } from '@tabler/icons';
-import { Button, Image } from 'react-bootstrap';
-import styles from "../../styles/about.module.scss"
-
+import { Button, Container, Image } from 'react-bootstrap';
+import styles from "../../styles/about.module.scss";
 
 export default function About() {
     const [slides] = useState([{ image: 'images/about-one.jpg' }, { image: 'images/about-two.jpg' }])
@@ -100,10 +99,11 @@ export default function About() {
         slider.slickPrev()
     }
     return (
-        <section className={`bgGrey py-1`} id="about">
+        <section className={`bgGrey py-1`} id="about" >
             <div className=' m-0 p-0'>
                 <div className="row my-5 mx-0">
-                    <div className={`col-md-8 p-0`} >
+                    <div className={`sectionTitleM fw-bold`}>About Daniel</div>
+                    <Container className={`col-md-8 p-0 ${styles.aboutContainer}`}>
                         <Slider className={``} ref={sli => (slider = sli)} {...settings}>
                             {
                                 slides.map((slide, index) =>
@@ -136,7 +136,7 @@ export default function About() {
                                 ))
                             }
                         </Slider>
-                    </div>
+                    </Container>
                     <div className='col-md-4 m-0 d-flex justify-content-center align-items-end flex-column p-0'>
                         <div className={`numCardArrowRight `}>
                             <div className={`numberCard numberCardRight fw-bold`}>

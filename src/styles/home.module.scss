@@ -7,5 +7,12 @@
     border: 0px none;
 }
 .main{
-    width: 100%;
+    width: 100%
+}
+
+@media only screen and (max-width: 600px) {
+    .main{
+        height: 100%;
+        background-color: #e0e0da !important
+    }
 }

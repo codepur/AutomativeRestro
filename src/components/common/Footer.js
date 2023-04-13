@@ -10,8 +10,8 @@ const Footer = () => {
                 <Container className='py-3 text-white'>
                     <Row>
                         <div className='text-center'>
-                          <Image src='./images/whitepret.png' className={`img img-fluid ${styles.footimg}`} alt="" />
-                         </div>
+                            <Image src='./images/whitepret.png' className={`img img-fluid ${styles.footimg}`} alt="" />
+                        </div>
                     </Row>
                     <Row className={`${styles.firstDiv} my-3 d-flex justify-content-around align-items-center`}>
                         <Col md={12} xs={12} lg={6} xl={5} className='my-2'>
@@ -58,14 +58,14 @@ const Footer = () => {
                     </Row>
                     <Row className='text-center mt-2 mb-5'>
                         <Col>
-                            <Button className={`${styles.button} px-4`}>
+                            <Button className={`${styles.button} px-4 mt-3`}>
                                 Make a Reservation
                             </Button>
                         </Col>
                     </Row>
                     <Row className='my-3'>
                         <Col md={2}></Col>
-                        <Col className='d-flex flex-row justify-content-between align-items-center flex-wrap'>
+                        <Col className={`d-flex flex-row justify-content-between align-items-center flex-wrap ${styles.accessibility}`}>
                             <div className={`${styles.link}`}>ACCESSIBILITY</div>
                             <div className={`${styles.link}`}>CAREERS</div>
                             <div className={`${styles.link}`}>STORE</div>

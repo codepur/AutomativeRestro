@@ -8,6 +8,7 @@ export default function MapComponent() {
             <div id="contact">
                 <Container className=''>
                     <Row className=' flex-wrap mx-0'>
+                        <div className={`sectionTitleM fw-bold mt-5`}>Contact</div>
                         <Col className={`${styles.firstDiv} d-flex align-items-center`}>
                             <div className={`numCardArrow`}>
                                 <div className={`numberCard fw-bold`}>
@@ -30,7 +31,7 @@ export default function MapComponent() {
                             <Row className='flex-wrap flex-column text-muted'>
                                 <Col>
                                     <div className=''>
-                                        <Image src="/images/logo.png" className='img img-fluid w-75' alt='logo'/>
+                                        <Image src="/images/logo.png" className='img img-fluid w-75' alt='logo' />
                                     </div>
                                     <div className='my-4'>
                                         <a

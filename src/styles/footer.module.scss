@@ -22,23 +22,27 @@
     }
 }
 
-.footerImageC{
-    opacity:0.5;
+.footerImageC {
+    opacity: 0.5;
 }
-.footerImageC:hover{
+
+.footerImageC:hover {
     opacity: 1;
 }
 
-.main .hovered{
-   display: none;
-}
-.main:hover .Credit{
+.main .hovered {
     display: none;
 }
-.main:hover .hovered{
+
+.main:hover .Credit {
+    display: none;
+}
+
+.main:hover .hovered {
     display: block;
     font-family: TiemposHeadline-medium;
 }
+
 .link {
     text-decoration: none;
     cursor: pointer !important;
@@ -48,12 +52,14 @@
         text-decoration: underline white !important;
     }
 }
-.din{
+
+.din {
     font-family: TiemposHeadline-medium;
     letter-spacing: .3px;
     // font-size: 24px;
 }
-.footimg{
+
+.footimg {
     width: 200px;
 }
 
@@ -71,6 +77,10 @@
     .thirdDiv {
         text-align: start !important;
     }
+
+    .link {
+        margin: 2% 0 0 0;
+    }
 }
 
 @media only screen and (min-width : 950px) {
@@ -78,5 +88,16 @@
         border-left: 2px solid white !important;
         border-right: 2px solid white !important;
         text-align: center !important;
+    }
+}
+
+@media only screen and (max-width : 650px) {
+    .accessibility {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .link {
+        margin-bottom: 5% !important;
     }
 }

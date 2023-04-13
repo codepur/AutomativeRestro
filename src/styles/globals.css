@@ -5,46 +5,46 @@
 html {
     --scrollbarBG: #eaeaea;
     --thumbBG: #50322e;
-  }
-  
-  body::-webkit-scrollbar {
+}
+
+body::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  body {
+}
+
+body {
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG);
     border-radius: 10px;
     border: 3px solid var(--scrollbarBG);
-  }
-  
-  *::selection {
+}
+
+*::selection {
     background-color: #50322e;
     color: white;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: gainsboro;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
 
 body {
     font-family: 'Tilt Neon', cursive !important;
@@ -169,6 +169,22 @@ body {
     color: #bebdb3;
 }
 
+.sectionTitleM {
+    display: none;
+    padding-left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 2.4px;
+    font-family: TiemposHeadline-heavy !important;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 41px;
+    color: #bebdb3;
+}
 
 /* =============================number box styling ends=========================== */
 
@@ -232,11 +248,11 @@ body {
 .logoImage {
     width: 163px;
     height: 107px;
-    transition: all 1s ease-out ;
+    transition: all 1s ease-out;
 }
 
 .smallLogoImage {
-    width: 1    63px;
+    width: 1 63px;
     position: absolute;
     top: 117px;
     left: 14px;
@@ -254,29 +270,68 @@ body {
 .home {
     margin-top: 13%;
 }
-.load{
+
+.load {
     height: 100vh;
 }
-.tnh{
+
+.tnh {
     transition: all 0.4s ease 0s;
 }
 
 .fullscreen {
     height: 100vh;
 }
+
 .childDivOutline {
-        position: absolute;
-        /* border: 1.3px solid rgba(202, 185, 185, 0.244); */
-        border: 1.3px solid rgba(203, 196, 196, 0.68);
-        top: 0;
-        margin: 3%;
-        height: 88%;
-        width: 94%;
-        transition: opacity 0.4s;
-        pointer-events: none;
-    }
+    position: absolute;
+    /* border: 1.3px solid rgba(202, 185, 185, 0.244); */
+    border: 1.3px solid rgba(203, 196, 196, 0.68);
+    top: 0;
+    margin: 3%;
+    height: 88%;
+    width: 94%;
+    transition: opacity 0.4s;
+    pointer-events: none;
+}
+
 .zindex {
     background-color: #50322e !important;
     z-index: 99999 !important;
     top: 3.7rem
-  }
+}
+
+
+/* =================================media query for number box====================== */
+
+@media only screen and (max-width: 1045px) {
+
+    .numberCardRight,
+    .numberCardDark,
+    .numberCard {
+        display: none;
+    }
+
+    .sectionTitleM {
+        display: flex;
+    }
+    body::-webkit-scrollbar {
+        width: 1px;
+    }
+    .spaces_arrow__FeSyL {
+        display:none ;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .screensize {
+      margin:  0 ;  
+      height: 27vh !important;
+    }
+    body::-webkit-scrollbar {
+        width: 1px;
+    }
+    .spaces_arrow__FeSyL {
+        display:none ;
+    }
+}

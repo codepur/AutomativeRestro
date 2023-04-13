@@ -1,20 +1,20 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import styles from "../styles/occasion.module.scss"
+import React from 'react';
+import styles from "../styles/occasion.module.scss";
 
 export default function occasion() {
     return (
         <>
             <div className={`${styles.mainContainer}`} id="occassion">
                 <div className="row">
-                    <div className={`${styles.leftContainer} col-md-8`}>
+                    <div className={`sectionTitleM mt-5 fw-bold`}>OCCASIONS</div>
+                    <div className={`${styles.leftContainer} col-md-12 col-xl-8 col-lg-12`}>
                         <div className={`${styles.content}`}>
-                            <div className={`${styles.contentHeading}`}>PRIVATE DINING & WEDDINGS</div>
+                            <div className={`${styles.contentHeading} lh-lg`}>PRIVATE DINING & WEDDINGS</div>
                             <div className={`${styles.contentParagraph}`}>Customized to fit the specific desires of each party, our private dining and options range from a 90-person seating in our Bellecour Room to a full restaurant takeover for up to 150 guests.</div>
                             <button className={`${styles.learnBtn}`}>LEARN MORE</button>
                         </div>
                         <div className={`${styles.content}`}>
-                            <div className={`${styles.contentHeading}`}>SMALL PARTIES & COCKTAILS</div>
+                            <div className={`${styles.contentHeading} lh-lg`}>SMALL PARTIES & COCKTAILS</div>
                             <div className={`${styles.contentParagraph}`}>Small parties are also welcome in the Bar & Lounge at DANIEL, for festive cocktail celebrations or an intimate seated dinner for up to 27 guests.</div>
                             <button className={`${styles.learnBtn}`}>LEARN MORE</button>
                         </div>
@@ -33,8 +33,6 @@ export default function occasion() {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </>

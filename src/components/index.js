@@ -10,6 +10,7 @@ import Occasion from './occasion';
 import Spaces from './spaces/Spaces';
 import Minute from './Minute';
 import { Image } from 'react-bootstrap';
+import { Toaster } from 'react-hot-toast';
 
 export default function Index() {
     const [show, setShow] = useState(false);
@@ -28,7 +29,7 @@ export default function Index() {
         </div>
       );
     return (
-        <>  
+        <>      
             <Header />
             <Home />
             <About />

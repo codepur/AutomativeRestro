@@ -41,15 +41,17 @@
   }
 }
 
-// .imgHover:hover{
-//     transform: scale(1.1) ;
-//     // transform: 10px 0;
-//     transition: 2s;
-//     visibility: inherit;
-//     opacity: 1 !important;
-//     cursor: pointer;
-// }
 .arr {
   background-color: #f8efda;
   border: 8px solid white !important;
+}
+
+@media only screen and (max-width: 1045px) {
+  .minuteContainer {
+    width: 90%;
+  }
+
+  .borderNone {
+    border-left: 9px solid white !important;
+  }
 }

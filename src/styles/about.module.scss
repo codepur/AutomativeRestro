@@ -47,3 +47,28 @@
 .slickSection {
     width: 90%;
 }
+
+.marginBottom {
+    margin: 4% 2%;
+}
+.arrowSection{
+    display: none !important;
+}
+
+@media only screen and (max-width: 1045px) {
+    .aboutContainer {
+        width: 90%;
+    }
+
+    .slickSection {
+        display: none !important;
+    }
+
+    .marginBottom {
+        width: 80%;
+    }
+    .arrowSection{
+        display: flex !important;
+        padding-bottom: 2%;
+    }
+}
